@@ -1,7 +1,6 @@
 package com.app.xandone.ylayoutsample.cons;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.app.xandone.ylayoutsample.R;
@@ -13,8 +12,8 @@ import com.app.xandone.ylayoutsample.R;
 
 public class ConstraintLayoutAct extends AppCompatActivity {
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.act_cons_layout);
     }
 }

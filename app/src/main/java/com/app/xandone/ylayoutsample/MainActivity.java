@@ -1,13 +1,39 @@
 package com.app.xandone.ylayoutsample;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import com.app.xandone.ylayoutsample.cons.ConstraintLayoutAct;
+import com.app.xandone.ylayoutsample.coor.CoordinatorLayoutAct;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private Button btn_0;
+    private Button btn_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_coor_layout);
+        setContentView(R.layout.activity_main);
+        btn_0 = (Button) findViewById(R.id.btn_0);
+        btn_1 = (Button) findViewById(R.id.btn_1);
+        btn_0.setOnClickListener(this);
+        btn_1.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent();
+        switch (view.getId()) {
+            case R.id.btn_0:
+                intent.setClass(MainActivity.this, ConstraintLayoutAct.class);
+                break;
+            case R.id.btn_1:
+                intent.setClass(MainActivity.this, CoordinatorLayoutAct.class);
+                break;
+        }
+        startActivity(intent);
     }
 }
