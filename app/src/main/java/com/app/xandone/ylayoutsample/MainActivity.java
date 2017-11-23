@@ -7,12 +7,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import com.app.xandone.ylayoutsample.bar.AppbarAct;
 import com.app.xandone.ylayoutsample.cons.ConstraintLayoutAct;
 import com.app.xandone.ylayoutsample.coor.CoordinatorLayoutAct;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btn_0;
     private Button btn_1;
+    private Button btn_2;
     private Toolbar toolBar;
 
     @Override
@@ -21,10 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         btn_0 = (Button) findViewById(R.id.btn_0);
         btn_1 = (Button) findViewById(R.id.btn_1);
+        btn_2 = (Button) findViewById(R.id.btn_2);
         toolBar = (Toolbar) findViewById(R.id.toolBar);
 
         btn_0.setOnClickListener(this);
         btn_1.setOnClickListener(this);
+        btn_2.setOnClickListener(this);
 
         toolBar.setTitle("MainActivity");
     }
@@ -38,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_1:
                 intent.setClass(MainActivity.this, CoordinatorLayoutAct.class);
+                break;
+            case R.id.btn_2:
+                intent.setClass(MainActivity.this, AppbarAct.class);
                 break;
         }
         startActivity(intent);

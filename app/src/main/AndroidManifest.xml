@@ -26,6 +26,9 @@
         <activity
             android:name=".coor.CoordinatorLayoutAct"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".bar.AppbarAct"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
