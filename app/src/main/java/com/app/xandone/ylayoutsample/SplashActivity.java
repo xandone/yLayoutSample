@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.ImageView;
 
 /**
@@ -36,8 +35,6 @@ public class SplashActivity extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animator animator) {
-                        Log.d("yandone", "8moso");
-
                         jumpToMain();
                     }
 
