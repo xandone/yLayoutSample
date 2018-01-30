@@ -1,6 +1,6 @@
 #### View坐标系关系图
-![](https://github.com/xandone/yLayoutSample/blob/master/app/src/main/java/com/app/xandone/ylayoutsample/scroller/1517279475(1).jpg)
-![](https://github.com/xandone/yLayoutSample/blob/master/app/src/main/java/com/app/xandone/ylayoutsample/scroller/1517279499(1).jpg)
+![](https://github.com/xandone/yLayoutSample/blob/master/app/src/main/java/com/app/xandone/ylayoutsample/scroller/20160221170553904.jpg)
+![](https://github.com/xandone/yLayoutSample/blob/master/app/src/main/java/com/app/xandone/ylayoutsample/scroller/20160104113905961.jpg)
 
 #### scroller简介
 1.scrollTo和scrollBy只能改变View内容的位置，不能改变View在布局中的位置</br>
