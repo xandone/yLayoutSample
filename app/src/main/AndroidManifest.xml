@@ -36,6 +36,14 @@
         <activity
             android:name=".scroller.ScrollerAct"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".scrollview.ObservableActviity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".scrollview.ObservableActviity2"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
