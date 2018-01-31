@@ -7,7 +7,7 @@ import android.content.Context;
  * created on: 2018/1/26 10:37
  */
 
-public class utils {
+public class Utils {
     public static int dp2px(Context context, float dipValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dipValue * scale + 0.5f);

@@ -22,7 +22,7 @@ srcrollView嵌套RecyclerView冲突的问题:</br>
         }
         return super.onInterceptTouchEvent(e);
     }
-    ```Java
+    ```
 	
 	当滑动距离小于最小滑动距离mTouchSlop，认为改事需要拦截，禁止传递至RecyclerView
 	
