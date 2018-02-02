@@ -24,8 +24,21 @@
     <style name="splashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_bg</item>
         <item name="android:windowIsTranslucent">false</item>
+    </style>
 
+    <style name="normal_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tv_normal</item>
+        <item name="android:textColor">@color/tv_normal</item>
+        <item name="android:padding">10dp</item>
+    </style>
 
+    <style name="normal_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/tv_normal</item>
+        <item name="android:textColor">@color/tv_normal</item>
     </style>
 
 </resources>

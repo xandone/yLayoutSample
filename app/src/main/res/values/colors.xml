@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="light_gray">#999</color>
+    <color name="tv_normal">#333</color>
 </resources>

@@ -7,12 +7,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import com.app.xandone.ylayoutsample.anim.AnimActivity;
 import com.app.xandone.ylayoutsample.bar.AppbarAct;
 import com.app.xandone.ylayoutsample.cons.ConstraintLayoutAct;
 import com.app.xandone.ylayoutsample.coor.CoordinatorLayoutAct;
 import com.app.xandone.ylayoutsample.scroller.ScrollerAct;
 import com.app.xandone.ylayoutsample.scrollview.ObservableActviity;
-import com.app.xandone.ylayoutsample.scrollview.ObservableActviity2;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btn_0;
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn_2;
     private Button btn_3;
     private Button btn_4;
+    private Button btn_5;
     private Toolbar toolBar;
 
     @Override
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_2 = (Button) findViewById(R.id.btn_2);
         btn_3 = (Button) findViewById(R.id.btn_3);
         btn_4 = (Button) findViewById(R.id.btn_4);
+        btn_5 = (Button) findViewById(R.id.btn_5);
         toolBar = (Toolbar) findViewById(R.id.toolBar);
 
         btn_0.setOnClickListener(this);
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_2.setOnClickListener(this);
         btn_3.setOnClickListener(this);
         btn_4.setOnClickListener(this);
+        btn_5.setOnClickListener(this);
 
         toolBar.setTitle("MainActivity");
     }
@@ -60,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_4:
                 intent.setClass(MainActivity.this, ObservableActviity.class);
+                break;
+            case R.id.btn_5:
+                intent.setClass(MainActivity.this, AnimActivity.class);
                 break;
         }
         startActivity(intent);

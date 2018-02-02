@@ -42,7 +42,10 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".scrollview.ObservableActviity2"
+            android:name=".anim.AnimActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".anim.TweenAnimActivity"
             android:screenOrientation="portrait" />
     </application>
 
