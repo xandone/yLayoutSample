@@ -19,5 +19,9 @@
         android:id="@+id/btn_3"
         style="@style/normal_btn"
         android:text="frame" />
+    <Button
+        android:id="@+id/btn_4"
+        style="@style/normal_btn"
+        android:text="path" />
 
 </LinearLayout>

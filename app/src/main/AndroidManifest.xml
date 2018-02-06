@@ -47,6 +47,9 @@
         <activity
             android:name=".anim.TweenAnimActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".anim.PropertyAnimActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
