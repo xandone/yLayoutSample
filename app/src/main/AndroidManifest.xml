@@ -50,6 +50,9 @@
         <activity
             android:name=".anim.PropertyAnimActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".anim.PathAnimActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
