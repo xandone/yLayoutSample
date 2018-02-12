@@ -46,7 +46,6 @@ public class AnimActivity extends BaseActivity implements View.OnClickListener {
                 startActivity(new Intent(AnimActivity.this, PropertyAnimActivity.class));
                 break;
             case R.id.btn_3:
-                startActivity(new Intent(AnimActivity.this, PropertyAnimActivity.class));
                 break;
             case R.id.btn_4:
                 startActivity(new Intent(AnimActivity.this, PathAnimActivity.class));
