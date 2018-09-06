@@ -59,6 +59,9 @@
         <activity
             android:name=".bottomsheet.SheetAct"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".bottomsheet.SheetDialogAct"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

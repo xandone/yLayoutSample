@@ -20,7 +20,6 @@ public class BottomSheetActivity extends BaseActivity implements View.OnClickLis
     protected void init() {
         findViewById(R.id.btn_1).setOnClickListener(this);
         findViewById(R.id.btn_2).setOnClickListener(this);
-        findViewById(R.id.btn_3).setOnClickListener(this);
     }
 
     @Override
@@ -30,8 +29,7 @@ public class BottomSheetActivity extends BaseActivity implements View.OnClickLis
                 startAct(SheetAct.class);
                 break;
             case R.id.btn_2:
-                break;
-            case R.id.btn_3:
+                startAct(SheetDialogAct.class);
                 break;
         }
     }
