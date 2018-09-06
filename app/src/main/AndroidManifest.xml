@@ -53,6 +53,12 @@
         <activity
             android:name=".anim.PathAnimActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".bottomsheet.BottomSheetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bottomsheet.SheetAct"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

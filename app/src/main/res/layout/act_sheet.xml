@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/state_expanded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开" />
+
+        <Button
+            android:id="@+id/state_collapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="折叠" />
+
+        <Button
+            android:id="@+id/state_hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="60dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff0"
+            android:padding="20dp"
+            android:text="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f"
+            android:padding="20dp"
+            android:text="2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0ff"
+            android:padding="20dp"
+            android:text="3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0f0"
+            android:padding="20dp"
+            android:text="4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#614"
+            android:padding="20dp"
+            android:text="5"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#12d"
+            android:padding="20dp"
+            android:text="6"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
