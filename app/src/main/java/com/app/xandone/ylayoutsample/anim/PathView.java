@@ -9,8 +9,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathMeasure;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +17,9 @@ import android.view.animation.LinearInterpolator;
 import com.app.xandone.ylayoutsample.R;
 import com.app.xandone.ylayoutsample.utils.PathParserUtils;
 import com.app.xandone.ylayoutsample.utils.StoreHousePath;
+
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 /**
  * author: xandone

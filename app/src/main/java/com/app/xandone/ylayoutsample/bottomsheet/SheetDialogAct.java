@@ -1,10 +1,10 @@
 package com.app.xandone.ylayoutsample.bottomsheet;
 
-import android.support.design.widget.BottomSheetDialog;
 import android.view.View;
 
 import com.app.xandone.ylayoutsample.BaseActivity;
 import com.app.xandone.ylayoutsample.R;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 /**
  * author: Admin

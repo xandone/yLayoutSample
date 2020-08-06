@@ -1,24 +1,24 @@
 package com.app.xandone.ylayoutsample.bar;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 
 import com.app.xandone.ylayoutsample.R;
 import com.app.xandone.ylayoutsample.bar.frag.BarFrag1;
 import com.app.xandone.ylayoutsample.bar.frag.BarFrag2;
 import com.app.xandone.ylayoutsample.bar.frag.BarFrag3;
 import com.app.xandone.ylayoutsample.bar.frag.BarFrag4;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * author: xandone

@@ -1,12 +1,13 @@
 package com.app.xandone.ylayoutsample.bottomsheet;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomSheetBehavior;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.app.xandone.ylayoutsample.BaseActivity;
 import com.app.xandone.ylayoutsample.R;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
+import androidx.annotation.NonNull;
 
 /**
  * author: Admin

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
@@ -13,6 +12,8 @@ import android.view.ViewConfiguration;
 import android.view.animation.BounceInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.OverScroller;
+
+import androidx.annotation.Nullable;
 
 /**
  * author: xandone
@@ -91,6 +92,7 @@ public class ScrollerFlingAnim extends View {
                     overScroller.abortAnimation();
                 }
                 break;
+            default:
         }
 
         return true;

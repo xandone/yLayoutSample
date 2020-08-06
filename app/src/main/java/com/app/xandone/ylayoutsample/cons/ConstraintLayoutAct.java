@@ -1,9 +1,10 @@
 package com.app.xandone.ylayoutsample.cons;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import com.app.xandone.ylayoutsample.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * author: xandone

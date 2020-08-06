@@ -3,14 +3,15 @@ package com.app.xandone.ylayoutsample.bar.frag;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.xandone.ylayoutsample.R;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 /**
  * author: xandone
@@ -30,7 +31,7 @@ public class BarFrag1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.from(mActivity).inflate(R.layout.frag_bar_1, container, false);
+        View view = LayoutInflater.from(mActivity).inflate(R.layout.frag_bar_1, container, false);
         return view;
     }
 

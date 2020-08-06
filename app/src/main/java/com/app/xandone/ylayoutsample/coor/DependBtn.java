@@ -6,12 +6,14 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.Button;
 
+import androidx.appcompat.widget.AppCompatButton;
+
 /**
  * author: xandone
  * created on: 2017/11/22 9:44
  */
 
-public class DependBtn extends android.support.v7.widget.AppCompatButton {
+public class DependBtn extends AppCompatButton {
 
     private int w, h;
 

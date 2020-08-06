@@ -1,9 +1,7 @@
 package com.app.xandone.ylayoutsample;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,6 +12,9 @@ import com.app.xandone.ylayoutsample.cons.ConstraintLayoutAct;
 import com.app.xandone.ylayoutsample.coor.CoordinatorLayoutAct;
 import com.app.xandone.ylayoutsample.scroller.ScrollerAct;
 import com.app.xandone.ylayoutsample.scrollview.ObservableActviity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btn_0;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_6:
                 intent.setClass(MainActivity.this, BottomSheetActivity.class);
                 break;
+            default:
         }
         startActivity(intent);
     }
