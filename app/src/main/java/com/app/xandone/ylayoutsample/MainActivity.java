@@ -11,7 +11,7 @@ import com.app.xandone.ylayoutsample.bottomsheet.BottomSheetActivity;
 import com.app.xandone.ylayoutsample.cons.ConstraintLayoutAct;
 import com.app.xandone.ylayoutsample.coor.CoordinatorLayoutAct;
 import com.app.xandone.ylayoutsample.scroller.ScrollerAct;
-import com.app.xandone.ylayoutsample.scrollview.ObservableActviity;
+import com.app.xandone.ylayoutsample.observableView.ObservableActviity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

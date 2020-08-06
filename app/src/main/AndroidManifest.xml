@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".A"
+            android:name=".scroller.DiskViewActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,7 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".scrollview.ObservableActviity"
+            android:name=".observableView.ObservableActviity"
             android:screenOrientation="portrait" />
 
         <activity

@@ -19,4 +19,5 @@ public class ScrollerAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scroller_layout);
     }
+
 }
