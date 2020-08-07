@@ -47,6 +47,9 @@ public class DiskPointer extends View {
 
     private void drawbg() {
         bitmapCanvas.drawCircle(w / 2, h / 2, radius, paint);
+        paint.setStrokeWidth(20);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+        bitmapCanvas.drawLine(w / 2, h / 2, w / 2, 0, paint);
     }
 
     @Override

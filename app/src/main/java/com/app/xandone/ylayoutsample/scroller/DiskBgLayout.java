@@ -41,10 +41,10 @@ public class DiskBgLayout extends ViewGroup {
         child.layout(childLeft, childTop, width - getPaddingRight(), height - getPaddingBottom());
 
         View child2 = this.getChildAt(1);
-        child2.layout(width / 2 - 100,
-                height / 2 - 100,
-                width / 2 + 100,
-                height / 2 + 100
+        child2.layout(width / 2 - 200,
+                height / 2 - 200,
+                width / 2 + 200,
+                height / 2 + 200
         );
     }
 

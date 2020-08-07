@@ -8,7 +8,6 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -67,6 +66,9 @@ public class DiskView extends View {
         mMinimumVelocity = ViewConfiguration.get(context).getScaledMinimumFlingVelocity();
 
         blockAngle = 360 / BLOCK_COUNT;
+
+        touchSlop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
+
     }
 
     private void drawCircleBg() {
@@ -120,6 +122,9 @@ public class DiskView extends View {
         drawCircleBg();
     }
 
+    float lastX, lastY;
+    int touchSlop;
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         float x, y;
@@ -131,9 +136,17 @@ public class DiskView extends View {
                 if (!mScroller.isFinished()) {
                     mScroller.abortAnimation();
                 }
+                lastX = event.getX();
+                lastY = event.getY();
                 break;
             case MotionEvent.ACTION_MOVE:
-                handleActionMove(x, y);
+                float currentx = event.getX();
+                float currentY = event.getY();
+                if (Math.abs(currentx - lastX) > touchSlop || Math.abs(currentY - lastY) > touchSlop) {
+                    handleActionMove(x, y);
+                    lastX = currentx;
+                    lastY = currentY;
+                }
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
@@ -182,7 +195,8 @@ public class DiskView extends View {
         if (hypotenuse > 0 && lineA > 0 && lineB > 0) {
             float angle = fixAngle((float) Math.toDegrees(Math.acos((Math.pow(lineA, 2) + Math.pow(lineB, 2) - Math.pow(hypotenuse, 2)) / (2 * lineA * lineB))));
             if (!Float.isNaN(angle)) {
-                float sClockAngle = isClockwise(x, y) ? angle : -angle;
+                isClockwiseScrolling = isClockwise(x, y);
+                float sClockAngle = isClockwiseScrolling ? angle : -angle;
                 setRotation(getRotation() + sClockAngle);
             }
         }
@@ -209,6 +223,7 @@ public class DiskView extends View {
             float y = ((isShouldBeGetY ? mScroller.getCurrY() : mScroller.getCurrX()) * mScrollAvailabilityRatio);
             if (mLastScrollOffset != 0) {
                 float angle = fixAngle(Math.abs(y - mLastScrollOffset));
+                angle = isClockwiseScrolling ? angle : -angle;
                 setRotation(getRotation() + angle);
             }
             mLastScrollOffset = y;
@@ -231,4 +246,6 @@ public class DiskView extends View {
     private boolean isShouldBeGetY;
     private float mScrollAvailabilityRatio;
     private float mLastScrollOffset;
+    private boolean isClockwiseScrolling;
+
 }
